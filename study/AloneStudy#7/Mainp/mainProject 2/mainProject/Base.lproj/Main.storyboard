@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mainProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZT9-0E-0Cm" userLabel="BottomView">
+                                <rect key="frame" x="10" y="290" width="460" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="iKb-ag-cd1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcD-Is-V4r" userLabel="MiddleView">
+                                <rect key="frame" x="10" y="142" width="460" height="138"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="avS-rs-sW4">
+                                        <rect key="frame" x="18" y="14" width="424" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gch-Xb-Kyp">
+                                        <rect key="frame" x="18" y="94" width="424" height="30"/>
+                                        <color key="backgroundColor" red="0.51483335335057889" green="0.60877588643862657" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="로그인">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZJW-bm-z8x">
+                                        <rect key="frame" x="18" y="54" width="424" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sign In" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YeN-GO-hLI">
+                                        <rect key="frame" x="18" y="-27" width="424" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="J3d-dm-cvz"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="YeN-GO-hLI" secondAttribute="trailing" constant="10" id="3Wp-01-FbZ"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Gch-Xb-Kyp" secondAttribute="trailing" constant="10" id="5Jo-OJ-Oi0"/>
+                                    <constraint firstItem="ZJW-bm-z8x" firstAttribute="leading" secondItem="mcD-Is-V4r" secondAttribute="leadingMargin" constant="10" id="68i-Lf-bjw"/>
+                                    <constraint firstItem="ZJW-bm-z8x" firstAttribute="centerY" secondItem="mcD-Is-V4r" secondAttribute="centerY" id="6eW-wi-SQ3"/>
+                                    <constraint firstItem="avS-rs-sW4" firstAttribute="leading" secondItem="mcD-Is-V4r" secondAttribute="leadingMargin" constant="10" id="9RT-q7-v1J"/>
+                                    <constraint firstItem="Gch-Xb-Kyp" firstAttribute="top" secondItem="ZJW-bm-z8x" secondAttribute="bottom" constant="10" id="IRk-9m-J7s"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="ZJW-bm-z8x" secondAttribute="trailing" constant="10" id="K8L-lE-GvN"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="avS-rs-sW4" secondAttribute="trailing" constant="10" id="LHo-QO-KUp"/>
+                                    <constraint firstItem="Gch-Xb-Kyp" firstAttribute="leading" secondItem="mcD-Is-V4r" secondAttribute="leadingMargin" constant="10" id="hAM-ca-XUf"/>
+                                    <constraint firstItem="avS-rs-sW4" firstAttribute="top" secondItem="YeN-GO-hLI" secondAttribute="bottom" constant="20" id="jwF-FW-qtE"/>
+                                    <constraint firstItem="YeN-GO-hLI" firstAttribute="leading" secondItem="mcD-Is-V4r" secondAttribute="leadingMargin" constant="10" id="keM-ql-FMy"/>
+                                    <constraint firstItem="ZJW-bm-z8x" firstAttribute="top" secondItem="avS-rs-sW4" secondAttribute="bottom" constant="10" id="u6O-5D-Igz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zT-uB-MNc" userLabel="TopView">
+                                <rect key="frame" x="10" y="30" width="460" height="102"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google.png" translatesAutoresizingMaskIntoConstraints="NO" id="MpA-2H-sIi">
+                                        <rect key="frame" x="53" y="18" width="354" height="66"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="LAq-Ff-UnR"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="MpA-2H-sIi" secondAttribute="trailing" constant="45" id="Pdw-mH-kip"/>
+                                    <constraint firstItem="MpA-2H-sIi" firstAttribute="top" secondItem="1zT-uB-MNc" secondAttribute="topMargin" constant="10" id="Xfv-aA-aN8"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="MpA-2H-sIi" secondAttribute="bottom" constant="10" id="ggA-3W-zEf"/>
+                                    <constraint firstItem="MpA-2H-sIi" firstAttribute="leading" secondItem="1zT-uB-MNc" secondAttribute="leadingMargin" constant="45" id="jQv-j8-K43"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZT9-0E-0Cm" firstAttribute="top" secondItem="mcD-Is-V4r" secondAttribute="bottom" constant="10" id="2Pl-vY-dE4"/>
+                            <constraint firstItem="ZT9-0E-0Cm" firstAttribute="leading" secondItem="1zT-uB-MNc" secondAttribute="leading" id="Bnj-1v-bwX"/>
+                            <constraint firstItem="mcD-Is-V4r" firstAttribute="trailing" secondItem="1zT-uB-MNc" secondAttribute="trailing" id="FcN-iZ-SQ0"/>
+                            <constraint firstItem="ZT9-0E-0Cm" firstAttribute="trailing" secondItem="1zT-uB-MNc" secondAttribute="trailing" id="OCf-cb-xpl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZT9-0E-0Cm" secondAttribute="bottom" constant="10" id="Q9T-IW-MAV"/>
+                            <constraint firstItem="mcD-Is-V4r" firstAttribute="leading" secondItem="1zT-uB-MNc" secondAttribute="leading" id="REb-EK-gLi"/>
+                            <constraint firstItem="mcD-Is-V4r" firstAttribute="top" secondItem="1zT-uB-MNc" secondAttribute="bottom" constant="10" id="lH1-K4-aRg"/>
+                            <constraint firstAttribute="trailing" secondItem="1zT-uB-MNc" secondAttribute="trailing" constant="10" id="nA3-0F-Fzt"/>
+                            <constraint firstItem="1zT-uB-MNc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="npe-Dd-ziR"/>
+                            <constraint firstItem="1zT-uB-MNc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="vgg-NF-bvK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputIdField" destination="avS-rs-sW4" id="5RZ-eB-DPd"/>
+                        <outlet property="inputPwField" destination="ZJW-bm-z8x" id="VLe-bX-A6g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="138.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="google.png" width="544" height="184"/>
+    </resources>
+</document>
