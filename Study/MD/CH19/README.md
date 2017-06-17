@@ -33,7 +33,7 @@
 
 > 표준 편집 인터페이스  
 >   
-> ![]3.png)  
+> ![](3.png)  
 > 목록에서 단순히 행을 삭제하기 위한 목적이면 오른쪽의 Reordering Control영역에 ㅈ공되는 삭제버튼만 사용하면 되지만 복합적인 편집 기능을 제공해야 할 때는 위 그림과 같은 표준 인터페이스를 모두 사용함  
 > 행을 추가, 삭제하는 기능은 Editing Control여역에 빨간색 마이너스 아이콘이나 초록색 플러스 버트으로 제공되며, Reordering Control 영역에는 셀의 순서를 재배치 하는 컨트롤이 제공됨  
 
@@ -169,7 +169,7 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 > 	이 연산자의 뒤쪽에 위치한 일반 값의 타입은 앞쪽 옵셔널 값에서 옵셔널을 해제한 타입	과 일치해야 한다  
 > * 옵셔널 타입을 해제하면서 동시에 대체 값을 제공해주는 아주 편리한 연산자임  
 > * 변수에 옵셔널 타입을 해제한 값을 할당하는 과정에서 해당 값이 nil일 경우를 대비하여 기본 값을 주고자 할 때 매우 유용하게 사용할 수 있음  
-> et cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell() -> "cell"아이디를 가진 셀을 읽어와 옵셔널을 해제하되, 만약 그값이 nil일 경우 UITableViewCell 인스턴스를 새로 생성한다.  
+> let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell() -> "cell"아이디를 가진 셀을 읽어와 옵셔널을 해제하되, 만약 그값이 nil일 경우 UITableViewCell 인스턴스를 새로 생성한다.  
 
 > 셀프 사이징 셀  
 > estimatedRowHeight 프로퍼티  
@@ -178,7 +178,6 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 * estimatedRowHeight 프로퍼티는 셀 전체의 높이를 결정하기 전에 임시로 사용할 셀의 높이값을 나타냄 -> 테이블 뷰는 이 값을 바탕으로 아직 내부 사이즈가 결정되지 않은 셀들을 임시배치하고 그 안에 콘텐츠를 구성함
 * UITableViewAutomaticDimension 은 테이블 뷰의 rowHeight속성에 대입되어 높이값이 동적으로 설정될 것을 테이블 뷰에 알려주는 역할 -> 테이블 뷰의 rowHeight속성이 해당 값으로 설정되면 테이블 뷰는 전체 목록이 모두 만들어진 시점에서 셀 내부의 콘텐츠 레이아웃을 계산하고, 그에 따라 셀마다 높이값을 재설정함.
 * 위 코드는 viewWillAppear(_:)메소드와 적절한 시점에 넣어서 구현해 주면 됨
-* 
     
       
  
