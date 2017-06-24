@@ -12,6 +12,8 @@
 		3F12002B1EF7958900350768 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1200291EF7958900350768 /* Main.storyboard */; };
 		3F12002D1EF7958900350768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F12002C1EF7958900350768 /* Assets.xcassets */; };
 		3F1200301EF7958900350768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F12002E1EF7958900350768 /* LaunchScreen.storyboard */; };
+		3F728DC51EF811CE007FEF6B /* FriendList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F728DC41EF811CE007FEF6B /* FriendList.plist */; };
+		3FCFC2A11EF7B74400BCF724 /* FriendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCFC2A01EF7B74400BCF724 /* FriendData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3F12002C1EF7958900350768 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F12002F1EF7958900350768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F1200311EF7958900350768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F728DC41EF811CE007FEF6B /* FriendList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FriendList.plist; sourceTree = "<group>"; };
+		3FCFC2A01EF7B74400BCF724 /* FriendData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				3F1200251EF7958900350768 /* AppDelegate.swift */,
+				3FCFC2A01EF7B74400BCF724 /* FriendData.swift */,
 				3F1200271EF7958900350768 /* ViewController.swift */,
 				3F1200291EF7958900350768 /* Main.storyboard */,
 				3F12002C1EF7958900350768 /* Assets.xcassets */,
 				3F12002E1EF7958900350768 /* LaunchScreen.storyboard */,
 				3F1200311EF7958900350768 /* Info.plist */,
+				3F728DC41EF811CE007FEF6B /* FriendList.plist */,
 			);
 			path = Bundle;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			files = (
 				3F1200301EF7958900350768 /* LaunchScreen.storyboard in Resources */,
 				3F12002D1EF7958900350768 /* Assets.xcassets in Resources */,
+				3F728DC51EF811CE007FEF6B /* FriendList.plist in Resources */,
 				3F12002B1EF7958900350768 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F1200281EF7958900350768 /* ViewController.swift in Sources */,
+				3FCFC2A11EF7B74400BCF724 /* FriendData.swift in Sources */,
 				3F1200261EF7958900350768 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +312,7 @@
 				3F1200361EF7958900350768 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,18 +17,17 @@ class ViewController: UIViewController {
         
         let basePath = path[0] + "/friendList.plist"
         
-        
-        let fileManager = FileManager.default
-        //있는지 확인
-        if !FileManager.default.fileExists(atPath: basePath) {
-            if let bundlePath = Bundle.main.path(forResource: "FriendList", ofType: "plist") {
+         //있는지 확인
+        let fileManager = FileManager.default  //옵셔널 바인딩
+        if !fileManager.fileExists(atPath: basePath) {
+            if let bundlePath = Bundle.main.path(forResource: "FriendList", ofType: "plist") { //비어있을경우
                 do  {
-                    try FileManager.default.copyItem(atPath: bundlePath , toPath: basePath)
+                    try fileManager.copyItem(atPath: bundlePath , toPath: basePath) //번들에 있는걸 베이스에 복사
                 }catch {
                     return
                 }
-            }else {
-                return
+            }else { //비어있지 않은 경우
+                return //리턴
             }
         }
         
@@ -45,7 +44,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
